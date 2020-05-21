@@ -1,0 +1,23 @@
+{
+  "name": "appointments",
+  "version": "1.0.0",
+  "description": "Appointments System",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development/issues"
+  },
+  "homepage": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development#readme"
+}
