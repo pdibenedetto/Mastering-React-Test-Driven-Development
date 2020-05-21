@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "Appointments System",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.6",
     "jest": "^26.0.1"
   },
   "scripts": {
