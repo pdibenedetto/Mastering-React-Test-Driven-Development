@@ -1,0 +1,64 @@
+{
+  "name": "appointments",
+  "version": "1.0.0",
+  "description": "Appointments System",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "morgan": "^1.10.0",
+    "raw-loader": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-relay": "^9.1.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-relay": "^9.1.0",
+    "expect-redux": "^5.0.3",
+    "express-graphql": "^0.9.0",
+    "faker": "^4.1.0",
+    "jest": "^26.0.1",
+    "jest-raw-loader": "^1.0.1",
+    "react-test-renderer": "^16.13.1",
+    "relay-compiler": "^9.1.0",
+    "supertest": "^4.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/server/"
+    ]
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "build-server": "webpack --config webpack-server.config.js",
+    "test-server": "jest --config server/jest.json",
+    "serve": "node dist/server/server.js",
+    "relay": "relay-compiler --src ./src --schema ./src/schema.graphql --watchman false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development/issues"
+  },
+  "homepage": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development#readme"
+}
