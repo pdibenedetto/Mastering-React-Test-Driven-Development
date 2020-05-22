@@ -45,7 +45,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "test": "jest",
+    "test": "jest --watchAll",
     "build-server": "webpack --config webpack-server.config.js",
     "test-server": "jest --config server/jest.json",
     "serve": "node dist/server/server.js",
@@ -60,5 +60,10 @@
   "bugs": {
     "url": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development/issues"
   },
-  "homepage": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development#readme"
+  "homepage": "https://github.com/pdibenedetto/Mastering-React-Test-Driven-Development#readme",
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 67,
+    "jsxBracketSameLine": true
+  }
 }

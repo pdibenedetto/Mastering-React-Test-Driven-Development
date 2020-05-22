@@ -1,16 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Appointment} from '../src/Appointment'
-import {describe, expect, it} from "@jest/globals";
+import {beforeEach, describe, expect, it} from "@jest/globals";
 
 describe('Appointment', () => {
-  it('renders the customer first name', () => {
-    const customer = {firstName: 'Ashley'}
-    const component = <Appointment customer={customer} />
-    const container = document.createElement('div')
-    document.body.appendChild(container)
 
-    ReactDOM.render(component, container)
-    expect(document.body.textContent).toMatch('Ashley')
+  let customer
+  let container
+
+  beforeEach(() => {
+    container = document.createElement('div')
   })
+
+  const render = component => ReactDOM.render(component, container)
+
+  it('renders the customer first name', () => {
+    customer = {firstName: 'Ashley'};
+    render(<Appointment customer={customer}/>)
+    expect(container.textContent).toMatch('Ashley');
+  })
+
+  it('renders the customer first name', () => {
+    customer = {firstName: 'Jordan'};
+    render(<Appointment customer={customer}/>)
+    expect(container.textContent).toMatch('Jordan');
+  })
+
 })
